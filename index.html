@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--     <!- Widget em linha do Calendly - início 
+    <div
+      class="calendly-inline-widget"
+      data-url="https://calendly.com/d/xqbq-n6w4/criacao-do-plano-21?hide_event_type_details=1&hide_gdpr_banner=1&background_color=000000&text_color=fafafa"
+      style="min-width: 320px; height: 630px"
+    ></div>
+    <script
+      type="text/javascript"
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async
+    ></script>
+    <!Widget em linha do Calendly - fim -->
+  
+
+    <!--     <script>
+      initInlineWidget({
+        url: 'https://calendly.com/d/xqbq-n6w4/criacao-do-plano-21?hide_event_type_details=1&hide_gdpr_banner=1&background_color=000000&text_color=fafafa',
+        prefill: {
+          name: 'John Doe',
+          email: 'john@doe2.com',
+          customAnswers: {
+            a1: 'Yes'
+          }
+        }
+      })
+
+      var url_string = window.location.href
+      var url = new URL(url_string)
+      var nome = url.searchParams.get('nome')
+      var email = url.searchParams.get('email')
+      var phone = url.searchParams.get('a1')
+
+      //console.log(nome, email, phone)
+
+      var widcal = document.querySelector('[data-url]').dataset.url
+      var url_final = `https://calendly.com/d/xqbq-n6w4/criacao-do-plano-21?hide_event_type_details=1&hide_gdpr_banner=1&background_color=000000&text_color=fafafa&name=${nome}&email=${email}&a1=${phone}`
+      widcal = url_final
+
+      var url_string2 = widcal
+      var url2 = new URL(url_string2)
+      var nome2 = url2.searchParams.get('name')
+      var email2 = url2.searchParams.get('email')
+      var phone2 = url2.searchParams.get('a1') -->
+
+    <!--       /*       var testename = widcal.searchParams.set('name', nome)
+      var widcalname = widcal.url.searchParams.get('name')
+      var changename = widcal.replace(/name=([^&]+)/.exec(widcal)[1], nome) */
+
+      /*       queryParams.set("name", nome)
+              queryParams.set("email", email)
+              queryParams.set("a1", phone) */
+    </script> -->
+
+    <!-- Calendly inline widget begin -->
+    <div
+      class="calendly-inline-widget"
+      style="min-width: 320px; height: 580px"
+      data-auto-load="false"
+    >
+      <script
+        type="text/javascript"
+        src="https://assets.calendly.com/assets/external/widget.js"
+      ></script>
+      <script>
+        var url_string = window.location.href
+        var url = new URL(url_string)
+        var nome = url.searchParams.get('nome')
+        var email = url.searchParams.get('email')
+        var phone = url.searchParams.get('phone')
+
+        Calendly.initInlineWidget({
+          url: 'https://calendly.com/d/xqbq-n6w4/criacao-do-plano-21?hide_event_type_details=1&hide_gdpr_banner=1&background_color=000000&text_color=fafafa&name={Name: (First):1.3}%20{Name: (Last):1.6}&email={Email::2}&a1={Phone::5}',
+          prefill: {
+            name: nome,
+            email: email,
+            customAnswers: {
+              a1: 55 + phone
+            }
+          }
+        })
+      </script>
+    </div>
+    <!-- Calendly inline widget end -->
+  </body>
+</html>
