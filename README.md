@@ -1,6 +1,6 @@
 # Calendly-Get-Parameters-from-URL using Javascript
 
-I created this solution for a work need, when I was working at the company Mentalidade Empreendedora do Pedro Quintanilha, specialist in Recurrence in Brazil.
+I created this solution for a work need, when I was working at the company Mentalidade Empreendedora of Pedro Quintanilha.
 
 What happened before in this lead capture funnel was that there were email and phone errors due to the person having to enter the same information twice.
 
